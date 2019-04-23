@@ -1,0 +1,38 @@
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #06b8ac;
+  border-color: #06b8ac;
+}
+.video-fluid {
+  width: 100%;
+  height: auto;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.35rem 1.05rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+/*
+ body {
+  background-color: #06b8ac;
+} */
+
+
+.modal-dialog.modal-notify.modal-regreen .modal-header {
+  background-color: #06b8ac; }
+
+.modal-dialog.modal-notify.modal-regreen .fas, .modal-dialog.modal-notify.modal-regreen .fab, .modal-dialog.modal-notify.modal-regreen .far {
+  color: #06b8ac; }
+
+.modal-dialog.modal-notify.modal-regreen .badge {
+  background-color: #06b8ac; }
+
+.modal-dialog.modal-notify.modal-regreen .btn .fas, .modal-dialog.modal-notify.modal-regreen .btn .fab, .modal-dialog.modal-notify.modal-regreen .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-regreen .btn.btn-outline-regreen .fas, .modal-dialog.modal-notify.modal-regreens .btn.btn-outline-regreen .fab, .modal-dialog.modal-notify.modal-regreen .btn.btn-outline-regreen .far {
+  color: #06b8ac; }
