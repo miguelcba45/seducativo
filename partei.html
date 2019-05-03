@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MEC</title>
+  <!-- Font Awesome -->
+  <link href="css/all.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script>
+function resultado() {
+var p1, p2, p3, p4, p5, p6, p7, nota;
+<!-- 1ª pregunta -->
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+<!-- 2ª pregunta -->
+if (document.getElementById('p24').checked==true) {p2=1}
+else {p2=0}
+<!-- 3ª pregunta -->
+if (document.getElementById('p32').checked==true) {p3=1}
+else {p3=0}
+<!-- 4ª pregunta -->
+if (document.getElementById('p43').checked==true) {p4=1}
+else {p4=0}
+<!-- 5ª pregunta -->
+if (document.getElementById('p53').checked==true) {p5=1}
+else {p5=0}
+<!-- 6ª pregunta -->
+if (document.getElementById('p64').checked==true) {p6=1}
+else {p6=0}
+<!-- 7ª pregunta -->
+if (document.getElementById('p72').checked==true) {p7=1}
+else {p7=0}
+nota=p1+p2+p3+p4+p5+p6+p7;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+
+<body>
+
+<!-- Start your project here-->
+ 
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 text-center"><img src="img/logos/logo-mppe.png" class="img-fluid" alt=""></div>
+    <div class="col-md-6 text-center"><br>
+      <p class="teal-text font-weight-bold">REPÚBLICA BOLIVARIANA DE VENEZUELA <br> MINISTERIO DEL PODER POPULAR PARA LA EDUCACION <br> UNIDAD EDUCATIVA “ERNESTO CHE GUEVARA”  <br> VALENCIA – CARABOBO
+    </p> 
+    </div>
+    <div class="col-md-3 text-center"><img src="img/logos/indice.png" alt="" class="img-fluid"
+  style="width: 145px"></div>
+  </div>
+</div> 
+ 
+ <!-- /Start your project here-->
+<div class="container">
+<h2 class="text-center"><span class="badge badge-pill badge-default"> PARTE I: </span> </h2>
+<p class=" font-weight-bold text-center"> LEE LOS SIGUIENTES ENUNCIADOS Y DE ACUERDO A LOS CONOCIMIENTOS ADQUIRIDOS EN CLASE MARCA LA OPCION QUE CONSIDERAS CORRECTA.
+</p>
+
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>1-  La materia es todo aquello que tiene:</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> a-  Masa</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> b-  Temperatura</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> c-  Volumen</p>
+<hr>
+<p>2- Los estados de la materia son:</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p22"> a- Masa, volumen, temperatura</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> b- Volumen, solido, gaseoso</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p24"> c- Sólido, liquido , gaseoso</p>
+<hr>
+<p>3-  Las propiedades no características son:</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p32"> a-  Masa, temperatura, volumen</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p33"> b-  Punto de fusión, punto de ebullición, solubilidad</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> c-  Temperatura, volumen, densidad</p>
+<hr>
+<p>4-  Las propiedades características son:</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> a-  Temperatura, punto de fusión, solubilidad</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p43"> b-  Densidad, punto de fusión, punto de ebullición, solubilidad</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> c-  Masa, densidad, temperatura</p>
+<hr>
+<p>5-  La fórmula para calcular la masa es:</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p52"> a-  m/v</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta5" id="p53"> b-  d*v</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p54"> c-  m/d</p>
+<hr>
+<p>6-  la fórmula para calcular el volumen es:</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta6" id="p62"> a-  m/v</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta6" id="p63"> b-  d*v</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta6" id="p64"> c-  m/d</p>
+<hr>
+<p>7-  la fórmula para calcular la densidad es:</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta7" id="p72"> a-  m/v</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta7" id="p73"> b-  d*v</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta7" id="p74"> c-  m/d</p>
+
+<hr>
+<p align="center"><input type="button" class="btn btn-outline-default waves-effect" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+
+
+</div>
+
+
+
+
+  <!-- /Start your project here-->
+
+<!-- Footer -->
+<footer class="page-footer font-small teal">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> LUISANA SALAS O.</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script>
+
+$('#myList a').on('click', function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+
+  </script>
+</body>
+
+</html>

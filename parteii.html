@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MEC</title>
+  <!-- Font Awesome -->
+  <link href="css/all.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script>
+function resultado() {
+var p1, p2, p3, p4, p5, p6, p7, nota;
+<!-- 1ª pregunta -->
+if (document.getElementById('p12').checked==true) {p1=1}
+else {p1=0}
+<!-- 2ª pregunta -->
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+<!-- 3ª pregunta -->
+if (document.getElementById('p34').checked==true) {p3=1}
+else {p3=0}
+<!-- 5ª pregunta -->
+if (document.getElementById('p53').checked==true) {p5=1}
+else {p5=0}
+<!-- 6ª pregunta -->
+if (document.getElementById('p63').checked==true) {p6=1}
+else {p6=0}
+<!-- 7ª pregunta -->
+if (document.getElementById('p73').checked==true) {p7=1}
+else {p7=0}
+nota=p1+p2+p3+p5+p6+p7;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+
+<body>
+
+<!-- Start your project here-->
+ 
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 text-center"><img src="img/logos/logo-mppe.png" class="img-fluid" alt=""></div>
+    <div class="col-md-6 text-center"><br>
+      <p class="teal-text font-weight-bold">REPÚBLICA BOLIVARIANA DE VENEZUELA <br> MINISTERIO DEL PODER POPULAR PARA LA EDUCACION <br> UNIDAD EDUCATIVA “ERNESTO CHE GUEVARA”  <br> VALENCIA – CARABOBO
+    </p> 
+    </div>
+    <div class="col-md-3 text-center"><img src="img/logos/indice.png" alt="" class="img-fluid"
+  style="width: 145px"></div>
+  </div>
+</div> 
+ 
+ <!-- /Start your project here-->
+<div class="container">
+<h2 class="text-center"><span class="badge badge-pill badge-default"> PARTE II: </span> </h2>
+<p class=" font-weight-bold text-center"> DE ACUERDO AL CONOCIMIENTO QUE OBTUVISTE EN CLASE, RESUELVE LOS SIGUIENTES EJERCICIOS, UTILIZANDO LA CALCULADORA VIRTUAL QUE TE OFRECE EL SOFTWARE, OBTÉN TU RESULTADO Y SELECCIONA LA OPCION CORRECTA.
+</p>
+
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>1- Una barra rectangular de oro ocupa un espacio de 80ml, si la misma muestra tiene una masa de 1.544 g de masa. ¿Cuál será su densidad?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p11"> a- La densidad de la barra de oro es de 15,4 g/ml</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p12"> b-  La densidad de la barra de oro es de 19,3 g/ml</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> c- La densidad de la barra de oro es de 9,3 g/ml</p>
+<hr>
+<p>2- La densidad del plomo es de 1,13 g/ml. ¿Cuál será el volumen de 40g de esa sustancia?</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> a- El volumen que ocupa la muestra de plomo analizada es 3,59g</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> b- El volumen que ocupa la muestra de plomo analizada es 3,48g</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> c- El volumen que ocupa la muestra de plomo analizada es 2,57g</p>
+<hr>
+<p>3- La densidad del etanol es 0,79 g/ml. ¿Cuántos gramos tendrán 1000ml de alcohol?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> a- La cantidad de materia que posee son 580g</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p33"> b- La cantidad de materia que posee son 690g</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p34"> c- La cantidad de materia que posee son 790g</p>
+<hr>
+<p>4- Analiza la tabla de datos siguiente, y responde las preguntas planteadas</p>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">SUSTANCIA</th>
+      <th scope="col">PUNTO DE FUSIÓN (°C)</th>
+      <th scope="col">PUNTO DE EBULLICIÓN (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>ORO</td>
+      <td>AGUA</td>
+      <td>HIERRO</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1063</td>
+      <td>0</td>
+      <td>1536,5</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>2857</td>
+      <td>100</td>
+      <td>3000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>a- ¿A qué temperatura hierve el agua?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p52"> a.1- El agua hierve a 0°C</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta5" id="p53"> a.2- El agua hierve a 100°C</p>
+
+<p>b- ¿A qué temperatura funde el oro?</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta6" id="p62"> b.1- El oro funde a 1063°C</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta6" id="p63"> b.2- El oro funde a 2857°C</p>
+
+<p>c- ¿ Qué fenómeno le ocurre al hierro si se somete a 3000°C</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta7" id="p72"> c.1-  A 3000°C el hierro se funde</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta7" id="p73"> c.2-  A 3000°C el hierro hierve</p>
+
+<hr>
+<p align="center"><input type="button" class="btn btn-outline-default waves-effect" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+
+
+</div>
+
+
+
+
+  <!-- /Start your project here-->
+
+<!-- Footer -->
+<footer class="page-footer font-small teal">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> LUISANA SALAS O.</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script>
+
+$('#myList a').on('click', function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+
+  </script>
+</body>
+
+</html>
