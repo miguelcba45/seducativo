@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MEC</title>
+  <!-- Font Awesome -->
+  <link href="css/all.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+<!-- Start your project here-->
+ 
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 text-center"><img src="img/logos/logo-mppe.png" class="img-fluid" alt=""></div>
+    <div class="col-md-6 text-center"><br>
+      <p class="teal-text font-weight-bold">REPÚBLICA BOLIVARIANA DE VENEZUELA <br> MINISTERIO DEL PODER POPULAR PARA LA EDUCACION <br> UNIDAD EDUCATIVA “ERNESTO CHE GUEVARA”  <br> VALENCIA – CARABOBO
+    </p> 
+    </div>
+    <div class="col-md-3 text-center"><img src="img/logos/indice.png" alt="" class="img-fluid"
+  style="width: 145px"></div>
+  </div>
+</div> 
+ 
+
+ <!-- Masa-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="masa()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+    </div>
+    <div class="col">
+      <input id="ma" type="Number" class="form-control" placeholder="Densidad"/>
+    </div>
+    <div class="col">
+      <input id="mb" type="Number" class="form-control" placeholder="Volumen"/>
+    </div>
+    <div class="col">
+    <input id="mr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Masa-->
+
+
+ <!-- Densidad-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="densidad()"> Densidad </button>
+    </div>
+    <div class="col">
+      <input id="da" type="Number" class="form-control" placeholder="Masa"/>
+    </div>
+    <div class="col">
+      <input id="db" type="Number" class="form-control" placeholder="Volumen"/>
+    </div>
+    <div class="col">
+    <input id="dr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Densidad-->
+
+ <!-- Volumen-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="volumen()"> Volumen </button>
+    </div>
+    <div class="col">
+      <input id="va" type="Number" class="form-control" placeholder="Masa"/>
+    </div>
+    <div class="col">
+      <input id="vb" type="Number" class="form-control" placeholder="Densidad"/>
+    </div>
+    <div class="col">
+    <input id="vr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Volumen-->
+
+    <div class="container">    
+      <div class="row justify-content-center">
+    <div class="col-md-3 text-left"> <p style="padding: 0.20rem 1.15rem;"><span class="badge badge-pill badge-default">Fórmulas:</span></p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">m = masa</p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">d = Densidad</p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">v = Volumen</p>
+
+     </div>
+    <div class="col-md-3 text-center"><img src="img/present/triangulo1.png" class="img-fluid animated rotateIn" alt=""></div>
+    <div class="col-md-6 text-center"><img src="img/present/mdv.png" class="img-fluid animated rotateIn" alt=""></div>
+  </div>
+</div>
+
+<p align="center"><input type="button" class="btn btn-outline-default waves-effect" value=" C E R R A R " onclick="window.close();"/></p>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small teal">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> LUISANA SALAS O.</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+   
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script>
+
+$('#myList a').on('click', function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+
+  </script>
+<script>
+  function masa() {
+   var numero1 = Number($("#ma").val());
+   var numero2 = Number($("#mb").val());
+   var sumar = numero1 * numero2;
+   var resultado = $("#mr").val(sumar);
+}
+
+function densidad() {
+   var dnumero1 = Number($("#da").val());
+   var dnumero2 = Number($("#db").val());
+   var dsumar = dnumero1 / dnumero2;
+   var dresultado = $("#dr").val(dsumar);
+}
+
+function volumen() {
+   var vnumero1 = Number($("#va").val());
+   var vnumero2 = Number($("#vb").val());
+   var vsumar = vnumero1 / vnumero2;
+   var vresultado = $("#vr").val(vsumar);
+}
+
+/*function division() {
+   var numero1 = Number($("#a").val());
+   var numero2 = Number($("#b").val());
+   var sumar = numero1 / numero2;
+   var resultado = $("#r").val(sumar);
+}*/
+</script>
+
+
+
+</body>
+
+</html>
