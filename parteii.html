@@ -17,7 +17,7 @@
 
   <script>
 function resultado() {
-var p1, p2, p3, p4, p5, p6, p7, nota;
+var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, nota;
 <!-- 1ª pregunta -->
 if (document.getElementById('p12').checked==true) {p1=1}
 else {p1=0}
@@ -36,7 +36,19 @@ else {p6=0}
 <!-- 7ª pregunta -->
 if (document.getElementById('p73').checked==true) {p7=1}
 else {p7=0}
-nota=p1+p2+p3+p5+p6+p7;
+<!-- 8ª pregunta -->
+if (document.getElementById('p82').checked==true) {p8=1}
+else {p8=0}
+<!-- 9ª pregunta -->
+if (document.getElementById('p94').checked==true) {p9=1}
+else {p9=0}
+<!-- 10ª pregunta -->
+if (document.getElementById('p103').checked==true) {p10=1}
+else {p10=0}
+<!-- 11ª pregunta -->
+if (document.getElementById('p113').checked==true) {p11=1}
+else {p11=0}
+nota=p1+p2+p3+p5+p6+p7+p8+p9+p10+p11;
 alert(" Aciertos: " + nota);
 location.reload();
 }
@@ -73,9 +85,9 @@ location.reload();
 <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> c- La densidad de la barra de oro es de 9,3 g/ml</p>
 <hr>
 <p>2- La densidad del plomo es de 1,13 g/ml. ¿Cuál será el volumen de 40g de esa sustancia?</p>
-<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> a- El volumen que ocupa la muestra de plomo analizada es 3,59g</p>
-<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> b- El volumen que ocupa la muestra de plomo analizada es 3,48g</p>
-<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> c- El volumen que ocupa la muestra de plomo analizada es 2,57g</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> a- El volumen que ocupa la muestra de plomo analizada es 35,39ml</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> b- El volumen que ocupa la muestra de plomo analizada es 3,48ml</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> c- El volumen que ocupa la muestra de plomo analizada es 2,57ml</p>
 <hr>
 <p>3- La densidad del etanol es 0,79 g/ml. ¿Cuántos gramos tendrán 1000ml de alcohol?</p>
 <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> a- La cantidad de materia que posee son 580g</p>
@@ -97,19 +109,19 @@ location.reload();
     <tr>
       <th scope="row">1</th>
       <td>ORO</td>
-      <td>AGUA</td>
-      <td>HIERRO</td>
+      <td>1063</td>
+      <td>2857</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>1063</td>
+      <td>AGUA</td>
       <td>0</td>
-      <td>1536,5</td>
+      <td>100</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>2857</td>
-      <td>100</td>
+      <td>HIERRO</td>
+      <td>1536,5</td>
       <td>3000</td>
     </tr>
   </tbody>
@@ -128,6 +140,31 @@ location.reload();
 <p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta7" id="p73"> c.2-  A 3000°C el hierro hierve</p>
 
 <hr>
+
+<p>5- La soldadura es una aleación hecha de estaño y plomo que se usa en circuitos electrónicos. Cierta soldadura tiene un punto de fusión de 224°C. ¿Cuál es su punto de fusión en °F?</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta8" id="p82"> a- Su punto de fusión es 435 °F</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta8" id="p83"> b- Su punto de fusión es 634 °F</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta8" id="p84"> c- Su punto de fusión es 346 °F</p>
+<hr>
+
+<p>6- Convierta 172,9 °F (El punto de ebullición del etanol) a °C</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta9" id="p92"> a- 58,5</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta9" id="p93"> b- 68,3</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta9" id="p94"> c- 78,3</p>
+<hr>
+
+<p>7- Convertir 100 °C a K</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta10" id="p102"> a- 273</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta10" id="p103"> b- 373</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta10" id="p104"> c- 173</p>
+<hr>
+
+<p>8- Convertir 373 K a °C</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta11" id="p112"> a- 10</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta11" id="p113"> b- 100</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta11" id="p114"> c- 1000</p>
+<hr>
+
 <p align="center"><input type="button" class="btn btn-outline-default waves-effect" value=" R E S U L T A D O " onclick="resultado()"/></p>
 </form>
 

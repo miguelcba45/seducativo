@@ -33,6 +33,20 @@
 </div> 
  
 
+    <div class="container">    
+      <div class="row justify-content-center">
+    <div class="col-md-3 text-left"> <p style="padding: 0.20rem 1.15rem;"><span class="badge badge-pill badge-default">Fórmulas:</span></p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">m = masa</p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">d = Densidad</p>
+    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">v = Volumen</p>
+
+     </div>
+    <div class="col-md-3 text-center"><img src="img/present/triangulo1.png" class="img-fluid animated rotateIn" alt=""></div>
+    <div class="col-md-6 text-center"><img src="img/present/mdv.png" class="img-fluid animated rotateIn" alt=""></div>
+  </div>
+</div>
+
+
  <!-- Masa-->
 
 <div class="container">
@@ -95,23 +109,120 @@
     <input id="vr" type="text"  class="form-control" placeholder="Resultado" disabled/>
     </div>
   </div>
-  <hr>
+
 </div>
 
 <!-- /Volumen-->
 
-    <div class="container">    
-      <div class="row justify-content-center">
-    <div class="col-md-3 text-left"> <p style="padding: 0.20rem 1.15rem;"><span class="badge badge-pill badge-default">Fórmulas:</span></p>
-    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">m = masa</p>
-    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">d = Densidad</p>
-    <p class="font-weight-bolder" style="padding: 0.20rem 1.0rem;">v = Volumen</p>
 
-     </div>
-    <div class="col-md-3 text-center"><img src="img/present/triangulo1.png" class="img-fluid animated rotateIn" alt=""></div>
-    <div class="col-md-6 text-center"><img src="img/present/mdv.png" class="img-fluid animated rotateIn" alt=""></div>
-  </div>
+
+
+<hr><hr>
+
+<div class="container">
+<h3 class="font-weight-bolder text-center"><span class="badge badge-pill badge-default">Fórmulas de temperatura en sus diferentes unidades básicas</span></h3> <br>
+
+    <div class="row justify-content-center">
+    <div class="col-md-3 text-center"><img src="img/present/cf1.png" class="img-fluid animated rotateIn" alt=""></div>
+    <div class="col-md-3 text-center"><img src="img/present/f1.png" class="img-fluid animated rotateIn" alt=""></div>
+    <div class="col-md-3 text-center"><img src="img/present/kc1.png" class="img-fluid animated rotateIn" style="width: 150px" alt=""></div>
+    <div class="col-md-3 text-center"><img src="img/present/ck1.png" class="img-fluid animated rotateIn" style="width: 160px" alt=""></div>
+ </div>
+ 
 </div>
+<hr><hr>
+<!-- Grados Centígrados (°C)-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="centi()"> G. Centígrados (°C) </button>
+    </div>
+    <div class="col">
+      <input id="gca" type="Number" class="form-control" placeholder="G. Fahrenheit (°F)"/>
+    </div>
+    <div class="col">
+      <input id="gcb" type="text" class="form-control" placeholder="(°F – 32) / 1.8"disabled/>
+    </div>
+    <div class="col">
+    <input id="gcr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Grados Centígrados (°C)-->
+
+<!-- Grados Fahrenheit (°F)-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="fahr()"> G. Fahrenheit (°F)</button>
+    </div>
+    <div class="col">
+      <input id="gfa" type="Number" class="form-control" placeholder="G. Centígrados (°C)"/>
+    </div>
+    <div class="col">
+      <input id="gfb" type="text" class="form-control" placeholder="(1,8 * °C) + 32"disabled/>
+    </div>
+    <div class="col">
+    <input id="gfr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Grados Fahrenheit (°F)-->
+
+<!-- Kelvin-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="kel()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kelvin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+    <div class="col">
+      <input id="gka" type="Number" class="form-control" placeholder="G. Centígrados (°C)"/>
+    </div>
+    <div class="col">
+      <input id="gkb" type="text" class="form-control" placeholder="K= °C + 273"disabled/>
+    </div>
+    <div class="col">
+    <input id="gkr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- Kelvin-->
+
+<!-- Grados Centígrados (°C)-->
+
+<div class="container">
+  <div class="row md-form text-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-teal waves-effect" onclick="centi2()"> G. Centígrados (°C) </button>
+    </div>
+    <div class="col">
+      <input id="gcca" type="Number" class="form-control" placeholder="Kelvin"/>
+    </div>
+    <div class="col">
+      <input id="gccb" type="text" class="form-control" placeholder="°C= K – 273"disabled/>
+    </div>
+    <div class="col">
+    <input id="gccr" type="text"  class="form-control" placeholder="Resultado" disabled/>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- /Grados Centígrados (°C)-->
+
+
+
+
+
 
 <p align="center"><input type="button" class="btn btn-outline-default waves-effect" value=" C E R R A R " onclick="window.close();"/></p>
 
@@ -170,6 +281,31 @@ function volumen() {
    var vresultado = $("#vr").val(vsumar);
 }
 
+
+
+function centi() {
+   var vnumero1 = Number($("#gca").val());
+   var vsumar = (vnumero1 - 32) / 1.8;
+   var vresultado = $("#gcr").val(vsumar);
+}
+
+function fahr() {
+   var vnumero1 = Number($("#gfa").val());
+   var vsumar = (1.8 * vnumero1) + 32;
+   var vresultado = $("#gfr").val(vsumar);
+}
+
+function kel() {
+   var vnumero1 = Number($("#gka").val());
+   var vsumar = vnumero1 + 273;
+   var vresultado = $("#gkr").val(vsumar);
+}
+
+function centi2() {
+   var vnumero1 = Number($("#gcca").val());
+   var vsumar = vnumero1 - 273;
+   var vresultado = $("#gccr").val(vsumar);
+}
 /*function division() {
    var numero1 = Number($("#a").val());
    var numero2 = Number($("#b").val());
